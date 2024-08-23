@@ -1,3 +1,5 @@
+import { Geo } from "./Geo";
+
 export type Address = {
     street: string;
     suite: string;
