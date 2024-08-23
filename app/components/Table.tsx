@@ -99,7 +99,7 @@ function DataTable({ data, handleSelect }: PropTypes) {
     <>
       {data.length !== 0 && (
         <div>
-          <Table striped bordered hover size="sm">
+          <Table striped bordered hover size="sm" className="cursor-pointer">
             <thead>
               <tr>
                 <th onClick={() => requestSort("name")}>

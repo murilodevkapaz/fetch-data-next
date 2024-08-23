@@ -15,7 +15,7 @@ export default function Home() {
         "https://jsonplaceholder.typicode.com/users"
       );
       const data = await response.json();
-      console.log(data);
+
       setData(data);
     } catch (error) {
       alert(error);
@@ -38,7 +38,7 @@ export default function Home() {
         Fetch Users
       </button>
 
-      {filteredData.length > 0 && (
+      {data.length > 0 && (
         <div className="flex flex-col gap-2">
           <input
             value={search}
